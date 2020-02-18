@@ -1,0 +1,24 @@
+<div class="container">
+  <article>
+    <h1><%= @article.title %>
+      <small class="smaller">
+        <a href="<%= @article.id %>/edit"><i class="fas fa-edit"></i></a>
+        <a id="delete" href="<%= @article.id %>/delete"><i class="fas fa-trash-alt"></i></a>
+      </small>
+    </h1>
+    <hr>
+    <p><%= @article.content %></p>
+  </article>
+</div>
+
+<script>
+  trash = document.getElementById('delete');
+
+  trash.addEventListener("click", (event) => {
+    event.preventDefault();
+    const link = trash["href"];
+    if (window.confirm("Are you sure you want to delete that article?")) {
+      window.location = link;
+    }
+  });
+</script>
