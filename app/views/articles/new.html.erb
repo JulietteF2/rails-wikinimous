@@ -1,16 +1,3 @@
-<article>
-  <%= form_for(@article) do |f| %>
-    <div class="form-group">
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :content %>
-      <%= f.text_field :content %>
-    </div>
-
-    <br>
-    <%= f.submit class: 'btn btn-primary' %>
-  <% end %>
-</article>
+<div class="container">
+  <%= render 'form' %>
+</div>

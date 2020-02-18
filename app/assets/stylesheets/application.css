@@ -14,15 +14,36 @@
  *= require_self
  */
 
-body {
-  margin: 32px;
+article {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-article {
-  padding-left: 100px;
-  padding-right: 100px;
+.container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .smaller {
   font-size: 18px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+label {
+  width: 100px;
+}
+
+.back {
+  margin-top: 32px;
+}
+
+.content-input-area {
+  height: 100px;
 }

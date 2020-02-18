@@ -1,0 +1,18 @@
+  <article>
+    <%= form_for(@article) do |f| %>
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_field :content, class: 'content-input-area' %>
+      </div>
+
+      <br>
+      <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+  </article>
+
+  <%= link_to "Back", articles_path, class: 'back'%>
